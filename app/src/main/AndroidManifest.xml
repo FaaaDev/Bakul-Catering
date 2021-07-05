@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blogcorel.bakulcatering">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.DetailUserorderActivity"></activity>
+        <activity android:name=".main.DetailCatorderActivity" />
+        <activity android:name=".main.NotifActivity" />
+        <activity android:name=".main.ProcessActivity" />
+        <activity android:name=".main.OrderActivity" />
+        <activity android:name=".main.DetailCateringActivity" />
+        <activity android:name=".main.DetailMenuActivity" />
+        <activity android:name=".main.AddMenuActivity" />
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".main.ManageActivity" />
+        <activity android:name=".main.BukaActivity" />
+        <activity android:name=".main.RegisterActivity" />
+        <activity android:name=".main.LoginActivity" />
+        <activity
+            android:name=".main.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".main.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

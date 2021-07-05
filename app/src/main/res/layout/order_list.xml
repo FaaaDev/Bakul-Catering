@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:id="@+id/box_order">
+
+    <TextView
+        android:id="@+id/o_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Name"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/o_catname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Catering : Catname"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/o_tpesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Pemesanan : 23/14/1999"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/o_dipesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Pesanan Selesai : 23/14/1999"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/o_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Biaya : IDR 900000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/o_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status : Menunggu Konfirmasi"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/containermenu"
+        android:layout_marginTop="24dp"
+        android:background="#4A585858"/>
+</LinearLayout>

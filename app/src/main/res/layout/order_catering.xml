@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:background="#FFFFFF"
+    android:id="@+id/oc_con">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/oc_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Name"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/oc_tpesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23/14/1999"
+            android:textSize="14sp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/oc_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengorder : Saya"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/oc_dipesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Orderan : 23/14/1999"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/oc_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Biaya : IDR 900000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/oc_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nomor HP : 082269212156"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/oc_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat : Jl.Inhoftank Gg. Panyeuseuhan No. 46A"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/oc_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status : Menunggu Konfirmasi"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/containermenu"
+        android:layout_marginTop="24dp"
+        android:background="#4A585858"/>
+</LinearLayout>

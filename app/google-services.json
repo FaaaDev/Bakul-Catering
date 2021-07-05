@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "646750471870",
+    "firebase_url": "https://bakulcatering-47f0b.firebaseio.com",
+    "project_id": "bakulcatering-47f0b",
+    "storage_bucket": "bakulcatering-47f0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646750471870:android:8a091352338615634900ef",
+        "android_client_info": {
+          "package_name": "com.blogcorel.bakulcatering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646750471870-cr3jci25hmmdca9r4496is97b3k1uqps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blogcorel.bakulcatering",
+            "certificate_hash": "e6c410371e9d7e1a562a353597a2fca08c88f0ee"
+          }
+        },
+        {
+          "client_id": "646750471870-5cgratm667cmnfppo42j9lj78866eg8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5aTZaLXRmGheZuVoRnsnVUAVJBHLyvYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646750471870-5cgratm667cmnfppo42j9lj78866eg8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_fav">
+
+    <RelativeLayout
+        android:id="@+id/fav_warning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_fav"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/favorite_ilustration"/>
+        <TextView
+            android:id="@+id/tv_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Login Untuk Melihat Favoritmu"
+            android:textSize="24sp"
+            android:layout_margin="12dp"
+            android:textAlignment="center"
+            android:layout_below="@id/img_fav"
+            android:fontFamily="sans-serif-light"/>
+        <Button
+            android:id="@+id/fav_login"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:background="@drawable/et_10dp"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_below="@id/tv_fav"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fav_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#FC2B2B"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#FC2B2B"
+            app:tabTextColor="@color/colorSecondary"
+            app:tabRippleColor="@color/cardview_light_background" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

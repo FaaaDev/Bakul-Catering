@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_order">
+
+    <RelativeLayout
+        android:id="@+id/order_warning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_order"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/order_ilustration"/>
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Login Untuk Melihat Ordermu"
+            android:textSize="24sp"
+            android:layout_margin="12dp"
+            android:textAlignment="center"
+            android:layout_below="@id/img_order"
+            android:fontFamily="sans-serif-light"/>
+        <Button
+            android:id="@+id/order_login"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:background="@drawable/et_10dp"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_below="@id/tv_order"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/order_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Anda"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="32sp"
+            android:textColor="#000000"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/orderlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/load"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ProgressBar
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/order_ilustration"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Anda Masih Kosong, Belanja sekarang Yuk.."
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
